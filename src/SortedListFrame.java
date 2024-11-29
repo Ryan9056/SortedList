@@ -93,6 +93,14 @@ public class SortedListFrame extends JFrame{
 
                     list.addString(word);
 
+                    displayTA.setText("");
+
+                    for (int i = 0; i < list.size(); i++) {
+                        displayTA.append(i + ": " + list.pullString(i) + "\n");
+                    }
+
+
+
 
 
                 }

@@ -10,9 +10,7 @@ public class SortedList {
         int point = Sort(string);
         list.add(point, string);
 
-        for (int i = 0; i < list.size(); i++) {
-            System.out.println(list.get(i));
-        }
+
 
     }
 
@@ -45,6 +43,14 @@ public class SortedList {
             return false;
         }
 
+    }
+
+    public String pullString(int point) {
+        return list.get(point);
+    }
+
+    public int size() {
+        return list.size();
     }
 
 
